@@ -16,10 +16,6 @@ export default function Main() {
     }
   }, [activeTab]);
 
-  const onSelectInput = event => {
-    setActiveTab(event.target.value);
-  };
-
   const onSize = size => {
     setSizes(prev => [...prev, size]);
   };
