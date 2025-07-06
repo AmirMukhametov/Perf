@@ -1,6 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react';
 import Event from './Event';
 import { TABS, TABS_KEYS } from './tabsData';
+import IconCloudDrizzle from './icons/IconCloudDrizzle';
+import styles from './Main.module.css';
 
 export default function Main() {
   const ref = useRef();
@@ -41,7 +43,7 @@ export default function Main() {
   };
 
   return (
-    <main className="main">
+    <main className={styles.main}>
       <section className="section main__general">
         <h2 className="section__title section__title-header section__main-title">Главное</h2>
         <div className="hero-dashboard">
@@ -61,7 +63,7 @@ export default function Main() {
                 <div className="hero-dashboard__item-details">
                   +19
                   <span className="a11y-hidden">°</span>
-                  <div className="hero-dashboard__icon hero-dashboard__icon_rain" role="img" aria-label="Дождь"></div>
+                  <IconCloudDrizzle className={styles.heroDashboardIcon} aria-label="Дождь" />
                 </div>
               </li>
             </ul>

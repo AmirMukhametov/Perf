@@ -1,0 +1,12 @@
+.main {
+  display: grid;
+  flex: 0 0 auto;
+  grid-template-columns: 50% 50%;
+  gap: 1.625rem;
+  padding: 0 2.5rem;
+}
+.heroDashboardIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.5rem;
+} 
